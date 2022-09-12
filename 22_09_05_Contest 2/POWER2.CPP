@@ -50,8 +50,8 @@ int main()
     {
         ll a;
         cin >> a;
-        ll sqrta = sqrt(a);
-        if (sqrta * sqrta == a)
+        ld log2A = log2(a);
+        if (ceil(log2A) == floor(log2A))
             ans.push_back(a);
     }
     sort(ans.begin(), ans.end());

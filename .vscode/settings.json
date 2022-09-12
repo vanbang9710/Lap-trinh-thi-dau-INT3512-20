@@ -1,9 +1,0 @@
-{
-  "files.associations": {
-    "random": "cpp",
-    "queue": "cpp",
-    "climits": "cpp",
-    "xiosbase": "cpp",
-    "iostream": "cpp"
-  }
-}
