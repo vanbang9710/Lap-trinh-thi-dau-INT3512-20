@@ -1,1 +1,13 @@
 Contest Link: https://vjudge.net/contest/529593
+
+B https://vjudge.net/problem/UVA-484/origin Set
+C https://vjudge.net/problem/UVA-514/origin Stack
+D https://vjudge.net/problem/UVA-673/origin Stack
+G https://vjudge.net/problem/UVA-540/origin 1 Queue containing indexes of t Queues
+I https://vjudge.net/problem/UVA-11034/origin 2 Queues for 2 river sides
+E https://vjudge.net/problem/UVA-732/origin Backtrack with Branch and Bound. n is string length.
+    AC: The number of 'i' and 'o' is both <= n
+    Can also add: suf[i][c] is the 1st position of character c in string suffix [i, n]. Then backtrack jumps right to the suf.
+
+Skip Graph:
+H https://vjudge.net/problem/UVA-10172/origin

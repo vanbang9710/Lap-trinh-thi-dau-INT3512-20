@@ -93,9 +93,7 @@ int main() {
       cout << "0\n";
       continue;
     }
-    int ans = 0;
-    ans = f_pre[s.size() - 1] + Calc(s);
-    cout << ans << '\n';
+    cout << f_pre[s.size() - 1] + Calc(s) << '\n';
   }
 
   return 0;

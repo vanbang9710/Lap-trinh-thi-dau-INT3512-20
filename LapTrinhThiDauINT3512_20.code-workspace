@@ -48,7 +48,8 @@
 			"bitset": "cpp",
 			"initializer_list": "cpp",
 			"type_traits": "cpp",
-			"climits": "cpp"
+			"climits": "cpp",
+			"unordered_map": "cpp"
 		}
 	}
 }
