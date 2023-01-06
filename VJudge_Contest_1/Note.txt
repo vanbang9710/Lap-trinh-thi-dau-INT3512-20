@@ -8,6 +8,16 @@ I https://vjudge.net/problem/UVA-11034/origin 2 Queues for 2 river sides
 E https://vjudge.net/problem/UVA-732/origin Backtrack with Branch and Bound. n is string length.
     AC: The number of 'i' and 'o' is both <= n
     Can also add: suf[i][c] is the 1st position of character c in string suffix [i, n]. Then backtrack jumps right to the suf.
+K https://vjudge.net/problem/UVA-10954/origin Priority Queue. Lấy 2 cái nhỏ nhất cộng lại rồi nhét lại vào pq. Tối ưu bởi nó là cộng đi cộng lại 1 phần tử nhiều lần.
+L https://vjudge.net/problem/UVA-11995/origin Simulate Stack, Queue, Priority Queue
+M https://vjudge.net/problem/UVA-459/origin Disjoint Set Union - DSU https://vnoi.info/wiki/algo/data-structures/disjoint-set#:~:text=c%E1%BA%A5u%20tr%C3%BAc%2C%20nh%C6%B0%3A-,C%C3%A0i,-%C4%91%E1%BA%B7t%20Disjoint%20Set
+N https://vjudge.net/problem/UVA-793/origin DSU
+Q https://vjudge.net/problem/UVA-10507/origin BFS with deg[]
+R https://vjudge.net/problem/UVA-10583/origin DSU
+S https://vjudge.net/problem/UVA-10608/origin DSU
+T Find Longest Cycle or Weak Connect Component?
+U https://vjudge.net/problem/UVA-11503/origin DSU
+W https://vjudge.net/problem/UVA-11966/origin Sweep Line? https://vnoi.info/wiki/algo/geometry/Sweep-Line.md
 
 Skip Graph:
 H https://vjudge.net/problem/UVA-10172/origin

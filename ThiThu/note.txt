@@ -1,0 +1,2 @@
+B binary search the answer. Check: Get 4 points with max_x, max_y, min_x, min_y. Choose 2 of them to make horizontal lane, the others make vertical one.
+C binary search the answer + check with sieve (but even Mr. Phuong dunno)
