@@ -1,0 +1,71 @@
+Chapter 4 problems
+Problem 1.
+	A system has 16 tapes, and 4 processes P0, P1, P2 , P3with corresponding requests:
+	P0 requests at most 10 tapes
+	P1 requests at most 4 tapes
+	P2 requests at most 9 tapes
+	P3 requests at most 5 tapes
+	At t0, P0 has 5 tapes, P1 and P2 each has 2 tapes , P3 has 3 tapes
+	4 tapes available
+	Is the system safe with Banker’s algorithm?
+
+	At t1, P0 has 7 tapes, P1 and P2 each has 2 tapes , P3 has 3 tapes
+	2 tapes available
+	Is the system safe with Banker’s algorithm?
+
+	At t2, P0 has 7 tapes, P1 has 3 tapes, P2 each has 2 tapes, P3 has 3 tapes
+	1 tapes available
+	Is the system safe with Banker’s algorithm?
+	At t3, P0 has 7 tapes, P1 has 3 tapes, P2 each has 2 tapes, P3 has 4 tapes
+	0 tape available
+	Is the system safe with Banker’s algorithm?
+ 
+Problem 2
+	5 processes: P0 - P4; 3 resource types
+	A (10 instances),  B (5 instances), and C (7 instances)
+	At time T0:
+			Allocation	Max	Available
+			A B C	A B C 	A B C
+		P0	1 1 0	7 5 3 	3 3 2
+		 P1	1 0 0 	3 2 2
+		 P2	2 0 2 	9 0 2
+		 P3	2 1 1 	2 2 2
+		 P4	1 0 2	4 3 3
+Is the system safe with banker’s algorithm?
+ 
+PROBLEM 3
+	5 processes: P0 - P4; 3 resource types
+	A (10 instances),  B (5 instances), and C (7 instances)
+			Allocation	Max	Available
+			A B C	A B C	A B C
+		P0	0 1 2 	7 5 3 	3 3 2
+		P1	2 0 0	3 2 2
+		P2	3 0 1 	9 0 2
+		P3	2 1 1 	2 2 2
+		P4	0 0 1 	4 3 3
+	If P1 requests for (1,0,2) => can it be granted
+	If P4 requests for (1,0,0) => can it be granted?
+	If P0 requests for (0, 2, 0) => can it be granted?
+	If P1 requests for (1,0,2) => can it be granted
+	If P1’s request is granted, can the next request for (1,0,0) by P4 be granted?
+	If P1 requests for (1,0,2) => can it be granted
+	If P1’s request is granted, can the request for (0,2,0) by P0 be granted?
+ 
+PROBLEM 4
+
+	5 processes: P0 - P4; 3 resource types
+	A (10 instances),  B (5 instances), and C (7 instances)
+	At snapshot at time T0
+			 Allocation	Request	Available
+			A B C 	A B C 	A B C
+		P0	0 1 0 	1 0 0 	4 3 1
+		P1	2 0 0 	2 0 2
+		P2	2 0 3	0 0 0
+		P3	2 1 1 	1 0 0
+		P4	0 0 2 	0 0 2
+
+	Is there a deadlock at T0  ?
+	If P2 request (0, 0, 1), is there a deadlock?
+
+
+
