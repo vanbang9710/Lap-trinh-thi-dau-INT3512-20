@@ -215,7 +215,7 @@ void ResourceRequest(SystemInfo& info, RequestResps& result)
 void Print(RequestResps& result)
 {
 }
-#define taskname "MyResourceRequest1_1"
+#define taskname "MyResourceRequest1_2"
 
 int main()
 {
