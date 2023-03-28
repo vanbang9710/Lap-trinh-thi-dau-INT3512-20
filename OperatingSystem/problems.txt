@@ -44,12 +44,8 @@ PROBLEM 3
 		P3	2 1 1 	2 2 2
 		P4	0 0 1 	4 3 3
 	If P1 requests for (1,0,2) => can it be granted
-	If P4 requests for (1,0,0) => can it be granted?
-	If P0 requests for (0, 2, 0) => can it be granted?
-	If P1 requests for (1,0,2) => can it be granted
-	If P1’s request is granted, can the next request for (1,0,0) by P4 be granted?
-	If P1 requests for (1,0,2) => can it be granted
-	If P1’s request is granted, can the request for (0,2,0) by P0 be granted?
+	2. If P0 requests for (0, 2, 0) => can it be granted?
+
  
 PROBLEM 4
 

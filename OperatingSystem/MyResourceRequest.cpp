@@ -212,10 +212,7 @@ void ResourceRequest(SystemInfo& info, RequestResps& result)
     }
 }
 
-void Print(RequestResps& result)
-{
-}
-#define taskname "MyResourceRequest1_2"
+#define taskname "MyResourceRequest3_2"
 
 int main()
 {
@@ -230,7 +227,6 @@ int main()
     RequestResps result;
     InitializeResourceRequest(info);
     ResourceRequest(info, result);
-    Print(result);
 
     return 0;
 }
