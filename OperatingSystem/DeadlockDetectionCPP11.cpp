@@ -167,16 +167,16 @@ bool DeadlockDetection(SystemInfo& info)
             if (!Finish[i] && Smaller(info.Requests[i], Work)) {
                 Modify(Work, info.Allocation[i], 1);
                 Finish[i] = true;
-                cout << format("2. i={}\n3. W=W+All[{}]=", i, i) << Work << "; F=" << Finish << '\n';
+                cout << "2. i=" << i << "\n3. W=W+All[" << i << "]=" << Work << "; F=" << Finish << '\n';
                 break;
             }
         }
         if (i == m) {
-            cout << format("2. i=nope => goto 4\n 4. Deadlock");
+            cout << "2. i=nope => goto 4\n 4. Deadlock";
             return true;
         }
     }
-    cout << format("2. i=nope => goto 4\n4. No Deadlock");
+    cout << "2. i=nope => goto 4\n4. No Deadlock";
     return false;
 }
 
@@ -184,19 +184,19 @@ void ResourceRequest(SystemInfo& info, RequestResps& result)
 {
     for (int j = 0; j < p; ++j) {
         int i = info.Request[j].back();
-        // cout << format("\n1. Request[{}] <= Available ", i);
+        // cout << "\n1. Request[" << i << "] <= Available ", i);
         // if (!Smaller(info.Request[j], info.Available)) {
         //     result.push_back(RequestResp(i, -3));
-        //     cout << format("Wrong");
+        //     cout << "Wrong");
         //     continue;
         // }
-        // cout << format("Right");
+        // cout << "Right");
         // Modify(info.Available, info.Request[j], -1);
         // Modify(info.Allocation[i], info.Request[j], 1);
         Modify(info.Requests[i], info.Request[j], 1);
-        // cout << format("\n3. Available = Available - Request[{}]=", i) << info.Available;
-        // cout << format("\n\tAllocation[{}] = Allocation[{}] + Request[{}]=", i, i, i) << info.Allocation[i];
-        cout << format("\n\n\tRequests[{}] = Requests[{}] + Request[{}]=", i, i, i) << info.Requests[i];
+        // cout << "\n3. Available = Available - Request[" << i << "]=", i) << info.Available;
+        // cout << "\n\tAllocation[" << i << "] = Allocation[" << i << "] + Request[" << i << "]=", i, i, i) << info.Allocation[i];
+        cout << "\n\n\tRequests[" << i << "] = Requests[" << i << "] + Request[" << i << "]=" << info.Requests[i];
         if (!DeadlockDetection(info)) {
             result.push_back(RequestResp(i, 0));
         } else {
@@ -204,14 +204,14 @@ void ResourceRequest(SystemInfo& info, RequestResps& result)
             // Modify(info.Available, info.Request[j], 1);
             // Modify(info.Allocation[i], info.Request[j], -1);
             Modify(info.Requests[i], info.Request[j], -1);
-            // cout << format("\nRestore the state\n\tAvailable = Available + Request[{}]=", i) << info.Available;
-            // cout << format("\n\tAllocation[{}] = Allocation[{}] - Request[{}]=", i, i, i) << info.Allocation[i];
-            cout << format("\n\tRequests[{}] = Requests[{}] - Request[{}]=", i, i, i) << info.Requests[i];
+            // cout << "\nRestore the state\n\tAvailable = Available + Request[" << i << "]=", i) << info.Available;
+            // cout << "\n\tAllocation[" << i << "] = Allocation[" << i << "] - Request[" << i << "]=", i, i, i) << info.Allocation[i];
+            cout << "\n\tRequests[" << i << "] = Requests[" << i << "] - Request[" << i << "]=" << info.Requests[i];
         }
     }
 }
 
-#define taskname "DeadlockDetection4_0"
+#define taskname "DeadlockDetection"
 
 int main()
 {
