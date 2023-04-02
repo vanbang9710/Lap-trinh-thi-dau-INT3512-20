@@ -7,7 +7,6 @@
 #include <cstring>
 #include <ctime>
 #include <deque>
-#include <format>
 #include <fstream>
 #include <functional>
 #include <iomanip>
