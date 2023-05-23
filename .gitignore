@@ -34,3 +34,4 @@
 *.ans
 *.ilk
 *.pdb
+.fake

@@ -211,7 +211,7 @@ void ResourceRequest(SystemInfo& info, RequestResps& result)
     }
 }
 
-#define taskname "DeadlockDetection4_0"
+#define taskname "DeadlockDetection"
 
 int main()
 {
